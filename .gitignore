@@ -41,3 +41,14 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.txt
+*.m~
+RunScripts/run_TIMIT.DIALECT.1.m
+RunScripts/run_TIMIT.DIALECT.2.m
+RunScripts/run_TIMIT.DIALECT.8.m
+RunScripts/run_TIMIT.DIALECT.7.m
+RunScripts/run_TIMIT.DIALECT.5.m
+RunScripts/run_TIMIT.DIALECT.6.m
+RunScripts/run_TIMIT.DIALECT.4.m
+RunScripts/run_TIMIT.DIALECT.3.m
+Data/phoneme_names_TIMIT.mat
