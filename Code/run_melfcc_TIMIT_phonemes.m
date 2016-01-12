@@ -6,7 +6,7 @@ train_test = 'TEST';
 
 %%
 file_name = sprintf('phonemeTimit_waveforms_paddedZeros_Dialect%i_%s.mat', dialect, train_test);
-load(fullfile(settings.path2output_phonemes, file_name), 'phoneme_data')
+load(fullfile(settings.path2output_phonemes, file_name), 'phoneme_data', 'phoneme_name', 'phoneme_index_name', 'phoneme_serial_place_in_sentence')
 
 %%
 num_samples = size(phoneme_data, 1);
@@ -48,4 +48,4 @@ end
 
 % Save
 file_name = sprintf('phonemeTimit_MFCCs_Dialect%i_%s.mat', dialect, train_test);
-save(fullfile(settings.path2output_MFCCs, file_name), 'phonemes_MFCC', '-v7.3')
+save(fullfile(settings.path2output_MFCCs, file_name), 'phonemes_MFCC', 'phoneme_name', 'phoneme_index_name', 'phoneme_serial_place_in_sentence', '-v7.3')
