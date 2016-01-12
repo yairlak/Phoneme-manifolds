@@ -12,10 +12,14 @@ params.num_mel_filters = 24;
 params.lowest_freq     = 300;    % in Hz
 params.highest_freq    = 8000;   % in Hz
 
+% constant = 3.3752;
+params.constant = 1; % !!!! WHY COLUMBIA MFCC Algorithm USES THIS CONSTANT? !!!
+
 %% paths TIMIT:
 settings.path2TIMITdata = fullfile('..', 'Data');
 settings.path2TIMITdata = '/cortex/data/sound/speech/TIMIT/timit/TIMIT';
-settings.path2output = fullfile('..', 'Output');
+settings.path2output_phonemes    = fullfile('..', 'Output_phonemes');
+settings.path2output_MFCCs     = fullfile('..', 'Output_MFCCs');
 % settings.path2save   = '/cortex/users/yairlak/phonemeTIMIT';
 
 
